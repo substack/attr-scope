@@ -22,7 +22,7 @@ attractor({
     'x-bind': require('attr-bind'),
     'x-click': [ require('attr-ev'), 'click' ]
 }, scope);
-attr.scan(document);
+attractor.scan(document);
 ```
 
 then write some html:
