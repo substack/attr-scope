@@ -1,4 +1,4 @@
-module.exports = function (cb) {
+module.exports = function () {
     return function (elem, rootkey) {
         var scope = this.scope;
         var node = scope[rootkey];
