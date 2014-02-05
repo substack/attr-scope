@@ -17,7 +17,7 @@ Robot.prototype.click = function () {
     this.counter(this.counter() + 1);
 };
 
-attractor({
+var attr = attractor({
     'x-scope': require('attr-scope'),
     'x-bind': require('attr-bind'),
     'x-click': [ require('attr-ev'), 'click' ]
