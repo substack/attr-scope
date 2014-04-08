@@ -67,6 +67,9 @@ the html element `elem` and the lookup strings will be rewritten to use a
 generated `_scope` parameter to hold the instantiated references in `scope` at
 `rootkey`.
 
+If the value at `rootkey` is a function, it will be instantiated with
+`new node(elem, this)` for the supplied element `elem` and the context `this`.
+
 # install
 
 With [npm](https://npmjs.org) do:

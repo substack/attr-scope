@@ -3,7 +3,7 @@ module.exports = function () {
         var scope = this.scope;
         var node = scope[rootkey];
         if (typeof node === 'function') {
-            node = new node(elem);
+            node = new node(elem, this);
         }
         
         if (!scope._scope) scope._scope = {};
