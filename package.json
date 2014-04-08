@@ -1,6 +1,6 @@
 {
   "name": "attr-scope",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "invoke constructors at attributes to provide controller scopes for attractor",
   "main": "index.js",
   "devDependencies": {
