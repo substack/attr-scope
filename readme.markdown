@@ -55,9 +55,12 @@ This module is meant to be used with
 [attractor](https://github.com/substack/attractor), but you can use the module
 directly too.
 
-## var handle = xscope()
+## var handle = xscope(cb)
 
-Create a new `handle(elem, rootkey)` that will 
+Create a new `handle(elem, rootkey)` that you can call to perform lookups.
+
+When a value is found, `cb(value, key)` fires with the resolved `value` and the
+attribute value for `rootkey` in the html, `key`.
 
 ## handle.call({ _selectors: {}, scope: {} }, elem, rootkey)
 
