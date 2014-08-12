@@ -5,7 +5,7 @@ module.exports = function (cb) {
         if (typeof node === 'function') {
             node = new node(elem, this);
         }
-        if (cb) cb(rootkey, node);
+        if (cb) cb(node, rootkey);
         
         if (!scope._scope) scope._scope = {};
         if (!scope._scope[rootkey]) scope._scope[rootkey] = [];

@@ -59,8 +59,7 @@ directly too.
 
 Create a new `handle(elem, rootkey)` that you can call to perform lookups.
 
-When a value is found, `cb(value, key)` fires with the resolved `value` and the
-attribute value for `rootkey` in the html, `key`.
+When a value is found, `cb(value, rootkey)` fires with the resolved `value`.
 
 ## handle.call({ _selectors: {}, scope: {} }, elem, rootkey)
 
