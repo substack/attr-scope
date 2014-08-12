@@ -1,10 +1,11 @@
-module.exports = function () {
+module.exports = function (cb) {
     return function (elem, rootkey) {
         var scope = this.scope;
         var node = scope[rootkey];
         if (typeof node === 'function') {
             node = new node(elem, this);
         }
+        if (cb) cb(rootkey, node);
         
         if (!scope._scope) scope._scope = {};
         if (!scope._scope[rootkey]) scope._scope[rootkey] = [];
