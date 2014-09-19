@@ -1,4 +1,4 @@
-var observe = require('observable');
+var observe = require('observ');
 var attractor = require('attractor');
 var scope = { robot: Robot };
 
@@ -7,7 +7,7 @@ function Robot (elem) {
 }
 
 Robot.prototype.vote = function () {
-    this.counter(this.counter() + 1);
+    this.counter.set(Number(this.counter()) + 1);
 };
 
 var attr = attractor({
